@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSLibrary" targetNamespace="MusicDiskMaker" xmlns:mstns="MusicDiskMaker" xmlns="MusicDiskMaker" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" GeneratorTypeConverterClassName="Converter" Modifier="AutoLayout, AnsiClass, NotPublic, Public" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSLibrary" msdata:IsDataSet="true" msprop:User_DataSetName="DSLibrary" msprop:DSGenerator_DataSetName="DSLibrary">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Artists" msdata:Locale="en-US" msprop:Generator_SuspendValidationVarName="m_suspendValidation" msprop:Generator_SuspendValidationPropName="SuspendValidation" msprop:User_TableName="Artists" msprop:Generator_RowClassName="ArtistsRow" msprop:Generator_RowEvArgName="ArtistsRowChangeEvent" msprop:Generator_RowEvHandlerName="ArtistsRowChangeEventHandler" msprop:Generator_TableClassName="ArtistsDataTable" msprop:Generator_TableVarName="tableArtists" msprop:Generator_TablePropName="Artists">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ArtistID" msdata:AutoIncrement="true" msprop:Generator_DelegateName="ArtistIDChangeEventHandler" msprop:Generator_ChangingEventName="ArtistIDChanging" msprop:Generator_ColumnVarNameInTable="columnArtistID" msprop:Generator_EventArgName="ArtistIDChangeEventArg" msprop:User_ColumnName="ArtistID" msprop:Generator_ColumnPropNameInRow="ArtistID" msprop:Generator_ChangedEventName="ArtistIDChanged" msprop:Generator_ColumnPropNameInTable="ArtistIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ArtistName" msprop:Generator_DelegateName="ArtistNameChangeEventHandler" msprop:Generator_ChangingEventName="ArtistNameChanging" msprop:Generator_ColumnVarNameInTable="columnArtistName" msprop:Generator_EventArgName="ArtistNameChangeEventArg" msprop:User_ColumnName="ArtistName" msprop:Generator_ColumnPropNameInRow="ArtistName" msprop:Generator_ChangedEventName="ArtistNameChanged" msprop:Generator_ColumnPropNameInTable="ArtistNameColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Albums" msdata:Locale="en-US" msprop:Generator_SuspendValidationVarName="m_suspendValidation" msprop:Generator_SuspendValidationPropName="SuspendValidation" msprop:User_TableName="Albums" msprop:Generator_RowClassName="AlbumsRow" msprop:Generator_RowEvArgName="AlbumsRowChangeEvent" msprop:Generator_RowEvHandlerName="AlbumsRowChangeEventHandler" msprop:Generator_TableClassName="AlbumsDataTable" msprop:Generator_TableVarName="tableAlbums" msprop:Generator_TablePropName="Albums">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AlbumID" msdata:AutoIncrement="true" msprop:Generator_DelegateName="AlbumIDChangeEventHandler" msprop:Generator_ChangingEventName="AlbumIDChanging" msprop:Generator_ColumnVarNameInTable="columnAlbumID" msprop:Generator_EventArgName="AlbumIDChangeEventArg" msprop:User_ColumnName="AlbumID" msprop:Generator_ColumnPropNameInRow="AlbumID" msprop:Generator_ChangedEventName="AlbumIDChanged" msprop:Generator_ColumnPropNameInTable="AlbumIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ArtistID" msprop:Generator_DelegateName="ArtistIDChangeEventHandler" msprop:Generator_ChangingEventName="ArtistIDChanging" msprop:Generator_ColumnVarNameInTable="columnArtistID" msprop:Generator_EventArgName="ArtistIDChangeEventArg" msprop:User_ColumnName="ArtistID" msprop:Generator_ColumnPropNameInRow="ArtistID" msprop:Generator_ChangedEventName="ArtistIDChanged" msprop:Generator_ColumnPropNameInTable="ArtistIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="AlbumName" msprop:Generator_DelegateName="AlbumNameChangeEventHandler" msprop:Generator_ChangingEventName="AlbumNameChanging" msprop:Generator_ColumnVarNameInTable="columnAlbumName" msprop:Generator_EventArgName="AlbumNameChangeEventArg" msprop:User_ColumnName="AlbumName" msprop:Generator_ColumnPropNameInRow="AlbumName" msprop:Generator_ChangedEventName="AlbumNameChanged" msprop:Generator_ColumnPropNameInTable="AlbumNameColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Tracks" msdata:Locale="en-US" msprop:Generator_SuspendValidationVarName="m_suspendValidation" msprop:Generator_SuspendValidationPropName="SuspendValidation" msprop:User_TableName="Tracks" msprop:Generator_RowClassName="TracksRow" msprop:Generator_RowEvArgName="TracksRowChangeEvent" msprop:Generator_RowEvHandlerName="TracksRowChangeEventHandler" msprop:Generator_TableClassName="TracksDataTable" msprop:Generator_TableVarName="tableTracks" msprop:Generator_TablePropName="Tracks">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TrackID" msdata:AutoIncrement="true" msprop:Generator_DelegateName="TrackIDChangeEventHandler" msprop:Generator_ChangingEventName="TrackIDChanging" msprop:Generator_ColumnVarNameInTable="columnTrackID" msprop:Generator_EventArgName="TrackIDChangeEventArg" msprop:User_ColumnName="TrackID" msprop:Generator_ColumnPropNameInRow="TrackID" msprop:Generator_ChangedEventName="TrackIDChanged" msprop:Generator_ColumnPropNameInTable="TrackIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="AlbumID" msprop:Generator_DelegateName="AlbumIDChangeEventHandler" msprop:Generator_ChangingEventName="AlbumIDChanging" msprop:Generator_ColumnVarNameInTable="columnAlbumID" msprop:Generator_EventArgName="AlbumIDChangeEventArg" msprop:User_ColumnName="AlbumID" msprop:Generator_ColumnPropNameInRow="AlbumID" msprop:Generator_ChangedEventName="AlbumIDChanged" msprop:Generator_ColumnPropNameInTable="AlbumIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="TrackName" msprop:Generator_DelegateName="TrackNameChangeEventHandler" msprop:Generator_ChangingEventName="TrackNameChanging" msprop:Generator_ColumnVarNameInTable="columnTrackName" msprop:Generator_EventArgName="TrackNameChangeEventArg" msprop:User_ColumnName="TrackName" msprop:Generator_ColumnPropNameInRow="TrackName" msprop:Generator_ChangedEventName="TrackNameChanged" msprop:Generator_ColumnPropNameInTable="TrackNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FileName" msprop:Generator_DelegateName="FileNameChangeEventHandler" msprop:Generator_ChangingEventName="FileNameChanging" msprop:Generator_ColumnVarNameInTable="columnFileName" msprop:Generator_EventArgName="FileNameChangeEventArg" msprop:User_ColumnName="FileName" msprop:Generator_ColumnPropNameInRow="FileName" msprop:Generator_ChangedEventName="FileNameChanged" msprop:Generator_ColumnPropNameInTable="FileNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DiskID" msprop:Generator_DelegateName="DiskIDChangeEventHandler" msprop:Generator_ChangingEventName="DiskIDChanging" msprop:Generator_ColumnVarNameInTable="columnDiskID" msprop:Generator_EventArgName="DiskIDChangeEventArg" msprop:User_ColumnName="DiskID" msprop:Generator_ColumnPropNameInRow="DiskID" msprop:Generator_ChangedEventName="DiskIDChanged" msprop:Generator_ColumnPropNameInTable="DiskIDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Sequence" msprop:Generator_DelegateName="SequenceChangeEventHandler" msprop:Generator_ChangingEventName="SequenceChanging" msprop:Generator_ColumnVarNameInTable="columnSequence" msprop:Generator_EventArgName="SequenceChangeEventArg" msprop:User_ColumnName="Sequence" msprop:Generator_ColumnPropNameInRow="Sequence" msprop:Generator_ChangedEventName="SequenceChanged" msprop:Generator_ColumnPropNameInTable="SequenceColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="FileSize" msprop:Generator_DelegateName="FileSizeChangeEventHandler" msprop:Generator_ChangingEventName="FileSizeChanging" msprop:Generator_ColumnVarNameInTable="columnFileSize" msprop:Generator_EventArgName="FileSizeChangeEventArg" msprop:User_ColumnName="FileSize" msprop:Generator_ColumnPropNameInRow="FileSize" msprop:Generator_ChangedEventName="FileSizeChanged" msprop:Generator_ColumnPropNameInTable="FileSizeColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="ArtistID" msprop:Generator_DelegateName="ArtistIDChangeEventHandler" msprop:Generator_ChangingEventName="ArtistIDChanging" msprop:Generator_ColumnVarNameInTable="columnArtistID" msprop:Generator_EventArgName="ArtistIDChangeEventArg" msprop:User_ColumnName="ArtistID" msprop:Generator_ColumnPropNameInRow="ArtistID" msprop:Generator_ChangedEventName="ArtistIDChanged" msprop:Generator_ColumnPropNameInTable="ArtistIDColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1">
+      <xs:selector xpath=".//mstns:Artists" />
+      <xs:field xpath="mstns:ArtistID" />
+    </xs:unique>
+    <xs:unique name="Albums_Constraint1" msdata:ConstraintName="Constraint1">
+      <xs:selector xpath=".//mstns:Albums" />
+      <xs:field xpath="mstns:AlbumID" />
+    </xs:unique>
+    <xs:keyref name="AlbumTrack" refer="Albums_Constraint1" msprop:rel_Generator_RelationVarName="relationAlbumTrack" msprop:rel_User_ParentTable="Albums" msprop:rel_User_ChildTable="Tracks" msprop:rel_User_RelationName="AlbumTrack" msprop:rel_Generator_ParentPropName="AlbumsRow" msprop:rel_Generator_ChildPropName="GetTracksRows">
+      <xs:selector xpath=".//mstns:Tracks" />
+      <xs:field xpath="mstns:AlbumID" />
+    </xs:keyref>
+    <xs:keyref name="ArtistAlbums" refer="Constraint1" msprop:rel_Generator_RelationVarName="relationArtistAlbums" msprop:rel_User_ParentTable="Artists" msprop:rel_User_ChildTable="Albums" msprop:rel_User_RelationName="ArtistAlbums" msprop:rel_Generator_ParentPropName="ArtistsRow" msprop:rel_Generator_ChildPropName="GetAlbumsRows">
+      <xs:selector xpath=".//mstns:Albums" />
+      <xs:field xpath="mstns:ArtistID" />
+    </xs:keyref>
+  </xs:element>
+</xs:schema>

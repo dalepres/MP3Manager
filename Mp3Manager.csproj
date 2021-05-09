@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FB02E43C-1D1E-49EF-8667-2D65D2202D56}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Preston.Media</RootNamespace>
+    <AssemblyName>Mp3Manager</AssemblyName>
+    <WarningLevel>4</WarningLevel>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <ApplicationIcon>1060-32x32-32.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>http://localhost/MusicDiskMaker/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <FxCopRules>
+    </FxCopRules>
+    <CodeAnalysisRules>
+    </CodeAnalysisRules>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Interop.WMPLib">
+      <HintPath>..\DPlayer\DPlayer_Source\bin\Debug\Interop.WMPLib.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Album.cs" />
+    <Compile Include="AlbumArtForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Artist.cs" />
+    <Compile Include="CDTagger.cs" />
+    <Compile Include="BulkUpdateTagsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BulkUpdateTagsForm.Designer.cs">
+      <DependentUpon>BulkUpdateTagsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ID3TagBackupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ID3TagBackupForm.Designer.cs">
+      <DependentUpon>ID3TagBackupForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ID3TagEditor\CommentFramesEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ID3TagEditor\CommentFramesEditor.Designer.cs">
+      <DependentUpon>CommentFramesEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ID3TagEditor\CommentFrameEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ID3TagEditor\CommentFrameEditor.Designer.cs">
+      <DependentUpon>CommentFrameEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ID3TagEditor\ID3TagRawViewerUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ID3TagEditor\ID3TagRawViewerUC.Designer.cs">
+      <DependentUpon>ID3TagRawViewerUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ID3TagEditor\ID3V2Editor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ID3TagEditor\ID3V2Editor.Designer.cs">
+      <DependentUpon>ID3V2Editor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditTrackFilenameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditTrackFilenameForm.Designer.cs">
+      <DependentUpon>EditTrackFilenameForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmbedPicturesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmbedPicturesForm.Designer.cs">
+      <DependentUpon>EmbedPicturesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ID3TagEditor\IId3Editor.cs" />
+    <Compile Include="ID3TagEditor\ImageFrameEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ID3TagEditor\ImageFrameEditor.Designer.cs">
+      <DependentUpon>ImageFrameEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ID3TagEditor\ImageFramesEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ID3TagEditor\ImageFramesEditor.Designer.cs">
+      <DependentUpon>ImageFramesEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MediaPlayerAccessLayer.cs" />
+    <Compile Include="Mp3Manager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mp3Manager.Designer.cs">
+      <DependentUpon>Mp3Manager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MusicLibrary.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MusicLibrary.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PlayListInfo.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AlbumArtForm.resx">
+      <DependentUpon>AlbumArtForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BulkUpdateTagsForm.resx">
+      <DependentUpon>BulkUpdateTagsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ID3TagBackupForm.resx">
+      <DependentUpon>ID3TagBackupForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ID3TagEditor\CommentFramesEditor.resx">
+      <DependentUpon>CommentFramesEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ID3TagEditor\CommentFrameEditor.resx">
+      <DependentUpon>CommentFrameEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="ID3TagEditor\DropFileHere.gif" />
+    <EmbeddedResource Include="ID3TagEditor\ID3TagRawViewerUC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ID3TagRawViewerUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ID3TagEditor\ID3V2Editor.resx">
+      <DependentUpon>ID3V2Editor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditTrackFilenameForm.resx">
+      <DependentUpon>EditTrackFilenameForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmbedPicturesForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>EmbedPicturesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ID3TagEditor\ImageFrameEditor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ImageFrameEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ID3TagEditor\ImageFramesEditor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ImageFramesEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mp3Manager.resx">
+      <DependentUpon>Mp3Manager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ID3TagEditor\TrackTagEditor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TrackTagEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ID3TagEditor\ID3V1Editor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ID3V1Editor.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="Track.cs" />
+    <Compile Include="ID3TagEditor\TrackTagEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ID3TagEditor\TrackTagEditor.Designer.cs">
+      <DependentUpon>TrackTagEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ID3TagEditor\ID3V1Editor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ID3TagEditor\ID3V1Editor.Designer.cs">
+      <DependentUpon>ID3V1Editor.cs</DependentUpon>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="MusicLibrary.xsc">
+      <DependentUpon>MusicLibrary.xsd</DependentUpon>
+    </None>
+    <None Include="MusicLibrary.xss">
+      <DependentUpon>MusicLibrary.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AlbumArtistButtonImage.png" />
+    <Content Include="1060-32x32-32.ico" />
+    <Content Include="MusicLibrary.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MusicLibrary.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Note.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ID3Lib\ID3Lib\ID3Lib.csproj">
+      <Project>{3ff10634-b438-4975-97d6-ab936ceda51a}</Project>
+      <Name>ID3Lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MediaPlayer\DPMediaPlayer.csproj">
+      <Project>{ecd9db3c-3a2b-4aae-8682-9f9bf07d7554}</Project>
+      <Name>DPMediaPlayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSHARP.Targets" />
+</Project>
